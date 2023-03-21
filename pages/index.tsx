@@ -1,14 +1,13 @@
 import React from "react";
+import { NextPage } from "next";
 import styled from "styled-components"
-import Header from "../components/Header"
 const Container = styled.div`
     font-size:21px;
     color:gray;
 `
 
-const index:React.FC = () => {
+const index:NextPage = () => {
     return <Container>
-        <Header/>
         
     </Container>
 }
