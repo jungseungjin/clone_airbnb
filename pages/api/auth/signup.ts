@@ -37,7 +37,6 @@ export default async(req:NextApiRequest,res:NextApiResponse)=>{
     
         Data.user.write([...users, newUser]);
     
-
         await new Promise((resolve) => {
             const token = jwt.sign(String(newUser.id), process.env.JWT_SECRET!);
             res.setHeader(

@@ -48,14 +48,14 @@ const HeaderUserProfile: React.FC = () => {
         <ul className="header-usermenu">
           <li>숙소 관리</li>
           <Link href="/room/register/building">
-            <a
+            <div
               role="presentation"
               onClick={() => {
                 setIsUsermenuOpened(false);
               }}
             >
               <li>숙소 등록하기</li>
-            </a>
+            </div>
           </Link>
           <div className="header-usermenu-divider" />
           <li role="presentation" onClick={logout}>
